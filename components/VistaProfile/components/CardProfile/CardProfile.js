@@ -12,7 +12,7 @@ import { Edit } from "../CardSkills/Styled";
 //import { FiEdit2 } from "react-icons/fi";
 //import { GoLocation } from "react-icons/go";
 import { Avatar } from "../../Styled";
-import SocialComponent from "./components/SocialComponent";
+
 
 const CardProfile = ({onClickEditarDatos,results,name,email,sector,empresa,country,city,description}) => {
   return (
@@ -35,10 +35,10 @@ const CardProfile = ({onClickEditarDatos,results,name,email,sector,empresa,count
           <p>{city}</p>
         </ContainerLocation>
       </ContainerData>
-      <SocialComponent/>
+     
 
       <ContainerHi>
-        <Hi>Hi there! ✌</Hi>
+        <Hi>Hi there!</Hi>
         <Description>{description}</Description>
       </ContainerHi>
     </CardContainer>
