@@ -123,6 +123,6 @@ export const DeleteButton = styled.div`
   }
 
 `
-const Error = styled.p`
+export const Error = styled.p`
  color:rgb(168, 38, 38);
 `

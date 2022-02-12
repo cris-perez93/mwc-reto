@@ -7,6 +7,7 @@ import Skills from "./InputComponent/Skills";
 import Router from "next/router";
 
 
+
 const FormularioSkillsComponent = ({
     empresa,
     sector,
