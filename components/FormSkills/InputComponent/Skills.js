@@ -1,6 +1,6 @@
 import { Camp, Label } from "../Styled";
 import ButtonSkills from "../../ButtonSkills/ButtonSkills";
-import { TiDelete } from "react-icons/ti";
+
 import { ContainerTagsInput,DeleteButton, Input } from "../Styled";
 import PropTypes from 'prop-types'
 
@@ -16,8 +16,8 @@ const Skills = ({skills,removeSkills,addSkills}) => {
               {skills.map((skill, index) => (
                   <ButtonSkills key={index}>
                     <span>{skill}</span>
-                    <DeleteButton>
-                    <TiDelete onClick={() => removeSkills(index)} />
+                    <DeleteButton onClick={() => removeSkills(index)}>
+                      x
                     </DeleteButton>
                   </ButtonSkills>
                 ))}

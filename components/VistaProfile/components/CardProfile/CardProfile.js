@@ -9,8 +9,8 @@ import {
   ContainerLocation,
 } from "../../Styled";
 import { Edit } from "../CardSkills/Styled";
-import { FiEdit2 } from "react-icons/fi";
-import { GoLocation } from "react-icons/go";
+//import { FiEdit2 } from "react-icons/fi";
+//import { GoLocation } from "react-icons/go";
 import { Avatar } from "../../Styled";
 import SocialComponent from "./components/SocialComponent";
 
@@ -21,7 +21,7 @@ const CardProfile = ({onClickEditarDatos,results,name,email,sector,empresa,count
       <Empresa>{empresa}</Empresa>
 
       <Edit onClick={onClickEditarDatos}>
-        <FiEdit2 />
+        Edit
       </Edit>
 
       <ContainerData>
@@ -31,7 +31,7 @@ const CardProfile = ({onClickEditarDatos,results,name,email,sector,empresa,count
         <p>{email}</p>
         <ContainerLocation>
           
-          <p><span><GoLocation /></span>{country} /</p>
+          <p>{country} /</p>
           <p>{city}</p>
         </ContainerLocation>
       </ContainerData>
