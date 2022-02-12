@@ -4,7 +4,7 @@ import Email from "./InputComponent/Email";
 import Description from "./InputComponent/Description";
 import Pais from "./InputComponent/Pais";
 import City from "./InputComponent/City";
-import { Camp, Form , CampFlex, Buttons} from "../FormSkills/Styled";
+import { Camp, Form , CampFlex, Buttons, Error} from "../FormSkills/Styled";
 import Router from "next/router";
 
 
@@ -38,7 +38,7 @@ const FormularioDatosComponent = ({
         onClose={() => Router.push("/user/profile")}
       >
         <Form onSubmit={handleSubmit}>
-          <h1>Editar Perfil</h1>
+          <h1>Profile</h1>
           <Name name={name} setName={setName} />
           <Email email={email} setEmail={setEmail} />
           <Description
@@ -52,12 +52,12 @@ const FormularioDatosComponent = ({
 
           {error && (
             <Camp>
-              <p>Rellena todos los campos</p>
+              <Error>All fields are required</Error>
             </Camp>
           )}
 
           <Buttons type="submit" variant="contained">
-            Guardar
+            Save
           </Buttons>
         </Form>
       </Modal>

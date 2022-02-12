@@ -79,6 +79,7 @@ const FormularioSkills = () => {
          addSkills={addSkills}
          removeSkills={removeSkills}
          handleSubmit={handleSubmit}
+         error={error}
     />
   );
 };

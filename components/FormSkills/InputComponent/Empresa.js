@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const Empresa = ({empresa, setEmpresa}) => {
     return ( 
         <Camp>
-            <Label>Empresa</Label>
+            <Label>Current job</Label>
             <InputForm
               onChange={(e) => setEmpresa(e.target.value)}
               placeholder="Freelance"

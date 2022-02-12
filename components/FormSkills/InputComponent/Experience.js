@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Experience = ({experience, setExperience}) => {
     return ( 
         <Camp>
-            <Label>Años de experiencia</Label>
+            <Label>Years Experience</Label>
             <InputFlex
               name="experience"
               value={experience}

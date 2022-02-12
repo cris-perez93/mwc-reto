@@ -12,7 +12,7 @@ const Pais = ({country,setCountry,countries}) => {
 
     return (
         <Camp>
-        <Label>Pais de residencia</Label>
+        <Label>Country</Label>
         <Select
           select
           onChange={(e) => setCountry(e.target.value)}

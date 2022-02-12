@@ -30,7 +30,7 @@ const VistaProfile = ({ results }) => {
   const { name, description, country, city, email } = alldata;
   const { empresa, sector, experience, skills } = allexperience;
 
-  if (!skills) return <p>Loading... no cargan los skills</p>;
+  if (!skills) return <p>Loading...</p>;
 
   return (
     <VistaProfileComponent

@@ -37,7 +37,7 @@ const FormularioSkillsComponent = ({
       onClose={() => Router.push("/")}
     >
       <Form>
-        <h1>Experiencia</h1>
+        <h1>Experience</h1>
 
         <Empresa empresa={empresa} setEmpresa={setEmpresa} />
         <CampFlex>
@@ -52,11 +52,11 @@ const FormularioSkillsComponent = ({
         {error && (
           <Camp>
             {" "}
-            <Error>Rellena todos los campos</Error>
+            <Error>All fields are required</Error>
           </Camp>
         )}
         <Buttons type="button" onClick={handleSubmit} variant="contained">
-          Guardar
+          Save
         </Buttons>
       </Form>
     </Modal>
