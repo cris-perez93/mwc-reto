@@ -3,7 +3,7 @@ import ExperienceContext from "../../Context/ExperienceContext";
 import { useContext } from "react";
 import { useRouter } from "next/router";
 import { Buttons } from "../FormSkills/Styled";
-import VistaProfileComponent from "./VistaProfileComponent";
+import VistaProfileComponent from "./VistaProfileComponent.jsx";
 import Link from "next/link";
 
 

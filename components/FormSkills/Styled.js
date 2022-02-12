@@ -115,12 +115,15 @@ export const InputFlex = styled(TextField)`
 `
 export const DeleteButton = styled.div`
  
-  font-size:20px;
-  margin-left:5px ;
+  font-size:10px;
+  margin-left:10px;
   display :flex ;
   align-items:center;
   justify-content:center;
-  margin-bottom: 3px;
+  background: red;
+  width: 10px;
+  height: 10px;
+  border-radius:100% ;
   &:hover{
       background: rgb(77, 41, 41);
       border-radius:100% ;
