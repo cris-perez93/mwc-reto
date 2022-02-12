@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# NUWE-MWC-HACKATHON
 
-First, run the development server:
+Cristian Pérez(Frontend). 
+
+> **Descripción del Proyecto** 
+
+En esta ocasión se nos desarrollar un plataforma que permita rellenar tus campos personales y profesionales y generar una vista que te ayude a posicionarte entre empresas y otras profesionales del sector.
+
+**Objetivos** 
+
+✅ Task 1 → Formulario que permita introducir los siguientes datos: correo electrónico, nombre completo, breve descripción, país y ciudad de residencia.
+
+✅ Task 2 → Generar un avatar de la persona de forma aleatoria (puede ser utilizando una API, colores, etc)
+
+✅ Task 3 → Formulario que permita introducir datos profesionales: años de experiencia, sector (Front, Back, Mobile o Data), skills: (se pueden añadir de forma libre)
+
+✅ Task 4 → Las skills salen en formato tag en alguna parte del perfil
+
+✅ Task 5 → Una vista que permita ver todo el perfil de user con los datos anteriores
+
+
+
+## Tecnologias
+👌  Nexjs<br>
+🧾  PropTypes<br>
+📕  Styled-Components<br>
+📎   ContextAPI
+
+
+## API/
+
+Consumo de API () 📃 
+(https://countriesnow.space/api/v0.1/countries/flag/images)<br>
+(https://randomuser.me/api/).
+
+
+
+## Estructura de carpetas
+He seguido una estructura atomizada a fin de conseguir una arquitectura
+con componentes pequeños, utilizando un patron de diseño separando la logica del componente visual.
+Utilizando props pasamos informacion a traves de estos  y los  documentamos con PropTypes.<br>
+Dumb Components and Smart Components.<br> 
+(https://medium.com/@thejasonfile/dumb-components-and-smart-components-e7b33a698d43)
+
+
+## Installation
 
 ```bash
-npm run dev
+npm install # Instalación de todas las dependencias del proyecto
+npm run dev #  Ejecuta el proyecto en modo desarrollo
+npm run start # Ejecuta el proyecto en modo producción
 # or
 yarn dev
+...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
