@@ -32,7 +32,7 @@ const Skills = ({skills,removeSkills,addSkills}) => {
       );
 }
 Skills.propTypes = {
-  skills: PropTypes.object,
+  skills: PropTypes.array.isRequired,
   removeSkills: PropTypes.func.isRequired,
   addSkills:PropTypes.func.isRequired
 }

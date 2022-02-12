@@ -24,7 +24,7 @@ const Sector = ({ sector, setSector }) => {
 };
 
 Sector.propTypes = {
-  sector: PropTypes.element.isRequired,
+  sector: PropTypes.string.isRequired,
   setSector: PropTypes.func.isRequired
 }
  

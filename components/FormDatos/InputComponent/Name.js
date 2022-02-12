@@ -28,7 +28,7 @@ const Name = ({name,setName}) => {
 }
 
 Name.propTypes = {
-  name: PropTypes.element.isRequired,
+  name: PropTypes.string.isRequired,
   setName: PropTypes.func.isRequired
 }
  

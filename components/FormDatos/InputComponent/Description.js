@@ -26,7 +26,7 @@ const Description = ({description,setDescription}) => {
 }
 
 Description.propTypes = {
-  description: PropTypes.element.isRequired,
+  description: PropTypes.string.isRequired,
   setDescription: PropTypes.func.isRequired
 }
  

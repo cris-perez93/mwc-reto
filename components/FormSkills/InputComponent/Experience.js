@@ -19,7 +19,7 @@ const Experience = ({experience, setExperience}) => {
      );
 }
 Experience.propTypes = {
-  experience: PropTypes.element.isRequired,
+  experience: PropTypes.string.isRequired,
   setExperience: PropTypes.func.isRequired
 }
  

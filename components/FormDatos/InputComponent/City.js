@@ -20,7 +20,7 @@ const City = ({city,setCity}) => {
 }
 
 City.propTypes = {
-  city: PropTypes.element.isRequired,
+  city: PropTypes.string.isRequired,
   setCity: PropTypes.func.isRequired
 }
  

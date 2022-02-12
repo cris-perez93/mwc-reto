@@ -24,7 +24,7 @@ const Email = ({email,setEmail}) => {
 }
 
 Email.propTypes = {
-  email: PropTypes.element.isRequired,
+  email: PropTypes.string.isRequired,
   setEmail: PropTypes.func.isRequired
 }
  

@@ -24,7 +24,7 @@ const Empresa = ({empresa, setEmpresa}) => {
 }
 
 Empresa.propTypes = {
-  empresa: PropTypes.element.isRequired,
+  empresa: PropTypes.string.isRequired,
   setEmpresa: PropTypes.func.isRequired
 }
  

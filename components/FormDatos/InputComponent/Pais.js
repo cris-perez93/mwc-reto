@@ -30,8 +30,8 @@ const Pais = ({country,setCountry,countries}) => {
 }
 
 Pais.propTypes = {
-  country: PropTypes.element.isRequired,
-  countries: PropTypes.array.isRequired,
+  country: PropTypes.string.isRequired,
+  countries: PropTypes.object.isRequired,
   setCountry: PropTypes.func.isRequired
 }
  
