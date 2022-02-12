@@ -13,6 +13,7 @@ const Sector = ({ sector, setSector }) => {
         name="sector"
         value={sector}
       >
+        <Option value=""></Option>
         <Option value="Frontend">Frontend</Option>
         <Option value="Backend">Backend</Option>
         <Option value="Mobile">Mobile</Option>

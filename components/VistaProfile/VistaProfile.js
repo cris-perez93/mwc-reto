@@ -2,10 +2,9 @@ import DataContext from "../../Context/DataContext";
 import ExperienceContext from "../../Context/ExperienceContext";
 import { useContext } from "react";
 import { useRouter } from "next/router";
-import {ContainerGeneral,AvatarEdit,} from "./Styled";
-import CardProfile from "./Components/CardProfile/CardProfile";
-import CardSkills from "./components/CardSkills/CardSkills";
+import { Buttons } from "../FormSkills/Styled";
 import VistaProfileComponent from "./VistaProfileComponent";
+import Link from "next/link";
 
 
 const VistaProfile = ({ results }) => {
@@ -30,7 +29,12 @@ const VistaProfile = ({ results }) => {
   const { name, description, country, city, email } = alldata;
   const { empresa, sector, experience, skills } = allexperience;
 
-  if (!skills) return <p>Loading...</p>;
+  if (!skills) return (
+  <div>
+    <p>Error data...</p>
+    <Link href='/'><a><Buttons>Return</Buttons></a></Link>
+    </div>
+    )
 
   return (
     <VistaProfileComponent
