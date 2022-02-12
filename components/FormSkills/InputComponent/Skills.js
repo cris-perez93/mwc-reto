@@ -1,8 +1,10 @@
 import { Camp, Label } from "../Styled";
 import ButtonSkills from "../../ButtonSkills/ButtonSkills";
-import { TiDelete } from "react-icons/ti";
+//import { TiDelete } from "react-icons/ti";
 import { ContainerTagsInput,DeleteButton, Input } from "../Styled";
 import PropTypes from 'prop-types'
+import Svg from './../../../public/edit-logo.svg'
+import Image from "next/image";
 
 
 const Skills = ({skills,removeSkills,addSkills}) => {
@@ -16,7 +18,7 @@ const Skills = ({skills,removeSkills,addSkills}) => {
                   <ButtonSkills key={index}>
                     <span>{skill}</span>
                     <DeleteButton>
-                    <TiDelete onClick={() => removeSkills(index)} />
+                    <Image src={Svg} onClick={() => removeSkills(index)}/>
                     </DeleteButton>
                   </ButtonSkills>
                 ))}
