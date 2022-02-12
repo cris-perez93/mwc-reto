@@ -1,9 +1,6 @@
 import Layout from '../Layout/Layout'
 import FormularioDatos from '../components/FormDatos/FormularioDatos'
-import { useState } from 'react'
-import VistaProfile from '../components/VistaProfile/VistaProfile'
-
-
+import PropTypes from 'prop-types'
 
 
 
@@ -20,13 +17,23 @@ export async function getStaticProps() {
   }
 }
 
-export default function Home({countries}) {
+const Home = ({countries}) => {
  
-const [data, setData] = useState([])
-  
+
   return (
+    <Layout>
     <FormularioDatos countries={countries}/>
+    </Layout>
 
    
   )
+
 }
+
+Home.propTypes = {
+  countries: PropTypes.object.isRequired
+}
+
+export default Home;
+  
+

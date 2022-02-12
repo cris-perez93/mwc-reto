@@ -1,35 +1,38 @@
 import { createContext, useEffect, useState } from "react";
 
+const Context = createContext({});
 
-const Context = createContext({})
+export function DataContextProvider({ children }) {
+  const [alldata, setAllData] = useState({});
 
-export function DataContextProvider ({children}) {
-    
+  const [edit, setEdit] = useState(false);
 
-    const [alldata, setAllData] = useState({})
+  useEffect(() => {
+    const getLocalStorage = () => {
+      const alldataLS = JSON.parse(localStorage.getItem("alldata")) ?? [];
 
-    useEffect(()=>{
-         const getLocalStorage = () => {
-             const alldataLS = JSON.parse(localStorage.getItem('alldata')) ?? [];
+      setAllData(alldataLS);
+    };
 
-             setAllData(alldataLS)
-         }
+    getLocalStorage();
+  }, []);
 
-         getLocalStorage()
-    },[])
+  useEffect(() => {
+    localStorage.setItem("alldata", JSON.stringify(alldata));
+  }, [alldata]);
 
-    useEffect(()=>{
-         localStorage.setItem('alldata', JSON.stringify(alldata))
-    },[alldata])
-
-    return(
-
-    <Context.Provider value={{
+  return (
+    <Context.Provider
+      value={{
         alldata,
-        setAllData
-    }}>
-        {children}
+        setAllData,
+        edit,
+        setEdit,
+      }}
+    >
+      {children}
     </Context.Provider>
-)}
+  );
+}
 
 export default Context;

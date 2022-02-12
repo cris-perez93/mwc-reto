@@ -1,35 +1,35 @@
 import { createContext, useEffect, useState } from "react";
 
+const Context = createContext({});
 
-const Context = createContext({})
+export function ExperienceContextProvider({ children }) {
+  const [allexperience, setAllExperience] = useState({});
 
-export function ExperienceContextProvider ({children}) {
-    
+  useEffect(() => {
+    const getLocalStorage = () => {
+      const experienceLS =
+        JSON.parse(localStorage.getItem("allexperience")) ?? [];
 
-    const [allexperience, setAllExperience] = useState({})
+      setAllExperience(experienceLS);
+    };
 
-    useEffect(()=>{
-         const getLocalStorage = () => {
-             const experienceLS = JSON.parse(localStorage.getItem('allexperience')) ?? [];
+    getLocalStorage();
+  }, []);
 
-             setAllExperience(experienceLS)
-         }
+  useEffect(() => {
+    localStorage.setItem("allexperience", JSON.stringify(allexperience));
+  }, [allexperience]);
 
-         getLocalStorage()
-    },[])
-
-    useEffect(()=>{
-         localStorage.setItem('allexperience', JSON.stringify(allexperience))
-    },[allexperience])
-
-    return(
-
-    <Context.Provider value={{
+  return (
+    <Context.Provider
+      value={{
         allexperience,
-        setAllExperience
-    }}>
-        {children}
+        setAllExperience,
+      }}
+    >
+      {children}
     </Context.Provider>
-)}
+  );
+}
 
 export default Context;
