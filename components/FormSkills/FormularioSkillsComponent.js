@@ -24,9 +24,13 @@ const FormularioSkillsComponent = ({
 
 }) => {
     return (
-        <Modal
+      <Modal
       styles={{
-        modal: { maxWidth: "90%", width: "", backgroundColor: "#2e2e2e98" },
+        modal: {
+          maxWidth: '500px',
+          width: "",
+          backgroundColor: "#2e2e2e98",
+        },
       }}
       center
       open

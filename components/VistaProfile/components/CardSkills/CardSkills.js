@@ -10,8 +10,8 @@ const CardSkills = ({skills}) => {
           <h3>SKILLS</h3>
 
           <List>
-            {skills.map((tag) => (
-              <ButtonSkills key={tag}>{tag}</ButtonSkills>
+            {skills.map((tag,index) => (
+              <ButtonSkills key={index}>{tag}</ButtonSkills>
             ))}
           </List>
           <Link href="/user/edit-skills">

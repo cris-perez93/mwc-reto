@@ -17,6 +17,8 @@ export const Form = styled.form`
    padding: 20px;
    border-radius:10px ;
    
+   
+   
 `
 export const Camp = styled.div`
  
@@ -42,6 +44,7 @@ export const InputForm = styled(TextField)`
   border: solid 1px #44494f;
   border-radius:5px;
   color: white;
+  
   
   
 `
@@ -95,6 +98,7 @@ export const CampFlex = styled.div`
   width:100%;
   flex-wrap:wrap;
   margin-bottom:20px ;
+  
   
   
   

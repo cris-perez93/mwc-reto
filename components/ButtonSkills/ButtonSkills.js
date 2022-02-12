@@ -12,6 +12,14 @@ const ButtonSkill = styled(Button)`
   font-size: 12px;
   background: #34393f;
   color: #adbac7;
+
+  @media (max-width: 390px) {
+    min-width:30px;
+    font-size:10px;
+  }
+
+  
+
   &:hover {
     background: #22272e;
   }
