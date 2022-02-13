@@ -1,6 +1,6 @@
 import { ContainerGeneral, AvatarEdit } from "./Styled";
 import CardProfile from "./Components/CardProfile/CardProfile";
-import CardSkills from "./Components/CardSkills/CardSkills";
+import CardSkills from "./components/CardSkills/CardSkills";
 
 const VistaProfileComponent = ({
   onClickEditarDatos,
