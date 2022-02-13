@@ -36,6 +36,8 @@ const VistaProfile = ({ results }) => {
     </div>
     )
 
+    if(!results) return <p>Loading results..</p>
+
   return (
     <VistaProfileComponent
     name={name}
