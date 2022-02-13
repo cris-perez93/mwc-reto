@@ -1,6 +1,7 @@
 import {
   ContainerHi,
   Hi,
+  ContainerDescription,
   Description,
   CardContainer,
   Sector,
@@ -39,7 +40,7 @@ const CardProfile = ({onClickEditarDatos,results,name,email,sector,empresa,count
 
       <ContainerHi>
         <Hi>Hi there! ✌</Hi>
-        <Description>{description}</Description>
+        <ContainerDescription><Description>{description}</Description></ContainerDescription>
       </ContainerHi>
     </CardContainer>
   );

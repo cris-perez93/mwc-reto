@@ -45,7 +45,7 @@ export const Avatar = styled.img`
  margin-bottom:10px;
  
  `
- export const ContainerDescription = styled.div`
+ export const ContainerExperience = styled.div`
  width: 800px;
  max-width:90%;
  margin-top:50px;
@@ -57,51 +57,21 @@ export const AvatarEdit = styled.img`
  border-radius:100%;
 `
 
-export const ContainerSkills = styled.div`
-  
-  display: flex;
-  flex-direction:column ;
-  justify-content:space-evenly;
-  width: 100%;
-  min-height:150px;
-  padding: 20px;
-  border: solid 1px #44494f;
-  border-radius:10px;
-  margin-bottom:30px;
-  position: relative;
+
+export const ContainerDescription=styled.div`
+ 
+ width: 100%;
+ overflow-wrap: break-word;
 
 `
-export const List = styled.ul`
-  display: flex;
-  flex-wrap:wrap ;
-  justify-content:center;
-  align-items:center;
-  gap:10px;
-  padding: 10px;
-  
-`
 
-
-
-export const Edit = styled.div`
-  
-  color: #B3B8CD;
-  font-size:16px;
-  padding: 5px;
-  position: absolute;
-  top:15px;
-  right:20px;
-  z-index:2;
-  cursor: pointer;
-  
-`
 export const Description = styled.p`
   
 
   margin-top:20px;
   padding: 20px;
   border-top: solid 1px #44494f;
-  overflow-wrap: break-word;
+  
   
     
 `

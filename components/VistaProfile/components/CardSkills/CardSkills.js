@@ -1,11 +1,13 @@
-import { ContainerDescription,ContainerSkills,List, Edit } from "../../Styled";
+
 import ButtonSkills from "../../../ButtonSkills/ButtonSkills";
 import Link from "next/link";
 import { FiEdit2 } from "react-icons/fi";
+import { ContainerSkills, Edit, List } from "./Styled";
+import { ContainerExperience } from "../../Styled";
 
 const CardSkills = ({skills}) => {
     return (
-        <ContainerDescription>
+        <ContainerExperience>
         <ContainerSkills>
           <h3>SKILLS</h3>
 
@@ -20,7 +22,7 @@ const CardSkills = ({skills}) => {
             </Edit></a>
           </Link>
         </ContainerSkills>
-      </ContainerDescription>
+      </ContainerExperience>
       );
 }
  
