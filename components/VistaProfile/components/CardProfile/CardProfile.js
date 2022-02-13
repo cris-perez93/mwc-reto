@@ -9,8 +9,6 @@ import {
   ContainerLocation,
 } from "../../Styled";
 import { Edit } from "../CardSkills/Styled";
-//import { FiEdit2 } from "react-icons/fi";
-//import { GoLocation } from "react-icons/go";
 import { Avatar } from "../../Styled";
 
 
