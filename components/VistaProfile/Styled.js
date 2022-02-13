@@ -60,17 +60,34 @@ export const AvatarEdit = styled.img`
 
 export const ContainerDescription=styled.div`
  
- width: 100%;
- overflow-wrap: break-word;
+ display: flex;
+ align-items:center;
+ justify-content:center;
+ text-align:center;
+ 
+ 
+ 
 
+`
+export const ContainerHi=styled.div`
+ 
+ display: flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:center;
+ 
+ 
+ 
 `
 
 export const Description = styled.p`
   
-
+ 
   margin-top:20px;
   padding: 20px;
   border-top: solid 1px #44494f;
+  overflow-wrap: break-word;
+  width: 80%;
   
   
     
@@ -170,13 +187,7 @@ padding: 20px;
 export const Hi = styled.h1`
   padding-left:30px;
 `
-export const ContainerHi=styled.div`
- 
- display: flex;
- flex-direction:column;
- align-items:center;
- 
-`
+
 
 export const Empresa = styled(Button)`
   background:#2164a8 ;
