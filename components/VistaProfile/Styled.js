@@ -101,8 +101,8 @@ export const Description = styled.p`
   margin-top:20px;
   padding: 20px;
   border-top: solid 1px #44494f;
- 
-  width: 100%;
+  
+  
 
   
   
