@@ -64,6 +64,12 @@ export const ContainerDescription=styled.div`
  align-items:center;
  justify-content:center;
  text-align:center;
+ @media (max-width: 400px) {
+    max-width:350px;
+    
+    
+    
+  }
  
  
  
@@ -84,10 +90,14 @@ export const Description = styled.p`
   
  
   margin-top:20px;
-  padding: 20px;
+  padding: 10px;
   border-top: solid 1px #44494f;
   overflow-wrap: break-word;
   width: 80%;
+  @media (max-width: 400px) {
+    max-width:350px ;
+    
+  }
   
   
     
