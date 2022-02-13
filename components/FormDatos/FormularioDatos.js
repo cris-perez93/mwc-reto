@@ -6,6 +6,7 @@ import FormularioDatosComponent from "./FormularioDatosComponent";
 
 const FormularioDatos =({countries}) => {
 
+  //state para formulario datos.
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
@@ -13,8 +14,11 @@ const FormularioDatos =({countries}) => {
   const [city, setCity] = useState("Barcelona");
   const [error, setError] = useState(false);
 
+  //extraemos state de context.
   const { setAllData, alldata, edit } = useContext(DataContext);
 
+
+  // useeffect para rellenar el form si queremos editar.
   useEffect(() => {
     if (Object.keys(alldata).length > 0) {
       setEmail(alldata.email);
@@ -31,6 +35,7 @@ const FormularioDatos =({countries}) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    //validación
     if ([email, name, description, country, city].includes("")) {
       setError(true);
       return;
@@ -38,6 +43,7 @@ const FormularioDatos =({countries}) => {
 
     setError(false);
 
+    //set state en objetData , para luego guardarlo en el context.
     const objetoData = {
       email,
       name,
@@ -47,6 +53,7 @@ const FormularioDatos =({countries}) => {
     };
     setAllData(objetoData);
 
+    // booleano que viene del componente cardprofile, para editar datos.
     if (edit) {
       router.push("/user/profile");
     } else {
