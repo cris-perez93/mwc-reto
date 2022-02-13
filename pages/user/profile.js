@@ -2,7 +2,7 @@ import Layout from "../../Layout/Layout";
 import VistaProfile from "../../components/VistaProfile/VistaProfile";
 import PropTypes from 'prop-types'
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch('https://randomuser.me/api/')
   const photo = await res.json()
 
@@ -16,7 +16,7 @@ export async function getStaticProps() {
 }
 
 
-const EditDatos = ({results}) => {
+const Profile = ({results}) => {
     return (
       <Layout>
         <VistaProfile results={results}/>
@@ -24,8 +24,8 @@ const EditDatos = ({results}) => {
       );
 }
 
-EditDatos.propTypes = {
+Profile.propTypes = {
   results: PropTypes.array.isRequired
 }
  
-export default EditDatos;
+export default Profile;
