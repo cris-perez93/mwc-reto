@@ -5,7 +5,7 @@ Cristian Pérez(Frontend).
 
 > **Descripción del Proyecto** 
 
-En esta ocasión se nos desarrollar un plataforma que permita rellenar tus campos personales y profesionales y generar una vista que te ayude a posicionarte entre empresas y otras profesionales del sector.
+En esta ocasión se nos pide desarrollar una plataforma que permita rellenar tus campos personales y profesionales y generar una vista que te ayude a posicionarte entre empresas y otras profesionales del sector.
 
 **Objetivos** 
 

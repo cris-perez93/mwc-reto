@@ -1,11 +1,13 @@
 import { Fragment } from "react";
-import { Camp,Label,InputForm } from "../../FormSkills/Styled";
+import { Camp,Label,InputForm, Error } from "../../FormSkills/Styled";
 import PropTypes from 'prop-types'
 
 
 
 
-const Name = ({name,setName}) => {
+const Name = ({name,setName, error}) => {
+
+
 
 
   return (
@@ -22,6 +24,7 @@ const Name = ({name,setName}) => {
             size="small"
             inputProps={{ style: { color: "whitesmoke" } }}
           />
+          {error && <Error>Name is required</Error>}
         </Camp>
         </Fragment>
       );

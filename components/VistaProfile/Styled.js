@@ -63,10 +63,14 @@ export const ContainerDescription=styled.div`
  display: flex;
  align-items:center;
  justify-content:center;
+ max-width: 100%;
+ 
+ 
  
  @media (max-width: 400px) {
-    max-width:350px;
     
+    
+    max-width:250px;
     
     
   }
@@ -81,6 +85,8 @@ export const ContainerHi=styled.div`
  flex-direction:column;
  align-items:center;
  justify-content:center;
+ 
+ max-width:100%;
  
  
  

@@ -31,6 +31,7 @@ const FormularioDatosComponent = ({
             maxWidth: "90%",
             width: "",
             backgroundColor: "#2e2e2e98",
+            borderRadius:'10px'
           },
         }}
         center
@@ -39,8 +40,8 @@ const FormularioDatosComponent = ({
       >
         <Form onSubmit={handleSubmit}>
           <h1>Profile</h1>
-          <Name name={name} setName={setName} />
-          <Email email={email} setEmail={setEmail} />
+          <Name   name={name} setName={setName} />
+          <Email  email={email} setEmail={setEmail} />
           <Description
             description={description}
             setDescription={setDescription}

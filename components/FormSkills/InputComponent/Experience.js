@@ -13,6 +13,7 @@ const Experience = ({experience, setExperience}) => {
               variant="outlined"
               size='small'
               type='number'
+              pattern="\d*"
               inputProps={{ style: { color: "whitesmoke" } }}
             />
             </Camp>

@@ -30,6 +30,7 @@ const FormularioSkillsComponent = ({
           maxWidth: '500px',
           width: "",
           backgroundColor: "#2e2e2e98",
+          borderRadius:'10px'
         },
       }}
       center

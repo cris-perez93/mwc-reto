@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 
 
 const City = ({city,setCity}) => {
+
+
+
     return (
         <Camp>
             <Label>City</Label>
